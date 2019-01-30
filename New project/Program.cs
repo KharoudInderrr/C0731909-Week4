@@ -22,10 +22,28 @@ namespace New_project
             // Node is an ADT
             // What kind of data do we need in a node?
              public Village nextVillage;
-            public String Villagename;
-            public bool isAstrildeHere = false;
+            public String VillageName;
+        public String previousVillage;
+        public bool isAstrildeHere = false;
             
 
         }
+    class Countryside
+    {
+        Village Maple = new Village();  
+        Village Toronto = new Village();
+        Village Ajax  = new Village();
+        Village First;
+        public void Launch()
+    {
+        Maple.VillageName = "Maple";
+            Maple.nextVillage = Toronto;
+            Maple.previousVillage = null;
+         Toronto.VillageName = "Toronto";
+            Maple.nextVillage = Ajax;
+            Ajax.VillageName = "Ajax";
+
+
+
     }
 
